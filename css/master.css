@@ -4,6 +4,14 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Rouge Script', cursive;
 font-family: 'Sacramento', cursive;
 */
+@font-face {
+    font-family: 'astroregular';
+    src: url('../css/fonts/astro-webfont.woff2') format('woff2'),
+         url('../css/fonts/astro-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 body{
   margin: 0;
@@ -30,7 +38,7 @@ body{
 }
 .top h2{
   color: #006a71;
-  font-family: 'Nanum Pen Script', cursive;
+  /*font-family: 'Nanum Pen Script', cursive;*/
   font-family: 'Fredericka the Great', cursive;
   font-weight: lighter;
 }
@@ -67,7 +75,7 @@ h3{
   margin: 0;
   /*font-family: 'Montserrat', sans-serif;*/
   font-size: 1.3rem;
-  color: #ff7e67;
+  color: #035054;
   font-family: 'Quicksand', sans-serif;
 
 }
@@ -88,8 +96,12 @@ hr {
 }
 
 a {
-  text-decoration: underline;
+  text-decoration: none;
   color: #cc6452;
+}
+a:hover {
+  text-decoration: none;
+  color: #a14e40;
 }
 
 .middle-container{
@@ -98,11 +110,6 @@ a {
 
 }
 
-.bottom-container{
-  /*background-color: yellow;*/
-  background-color: #ecf4f3;
-  font-family: 'Fredericka the Great', cursive;
-}
 
 .aboutme{
   width: 70%;
@@ -150,26 +157,52 @@ a {
 }
 
 .btn {
-	background-color:#68b0ab;
+	background-color:#006a71;
 	border-radius:28px;
-	border:1px solid #006971;
+	border:1px solid #035054;
 	display:inline-block;
 	cursor:pointer;
 	color:#ecf4f3;
-	font-family:Arial;
+	font-family: 'Montserrat', sans-serif;
 	font-size:17px;
-	padding:16px 31px;
+	padding:10px 20px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #035054;
   margin: 30px;
 }
 .btn:hover {
-	background-color:#ff7e67;
+  color:#035054;
+	background-color:#ecf4f3;
+  border:1px solid #035054;
+  text-shadow:0px 1px 0px #035054;
 }
 .btn:active {
 	position:relative;
 	top:1px;
 }
+
+
+.bottom-container{
+  /*background-color: yellow;*/
+  background-color: #68b0ab;
+  font-family: 'Fredericka the Great', cursive;
+  padding: 50px 0 20px;
+}
+
 .footer-link{
-  margin: 10px;
+  margin: 20px;
+}
+.bottom-container a{
+  color: #035054;
+  text-decoration: none;
+}
+
+.bottom-container a:hover{
+  color: #ecf4f3;
+  text-decoration: none;
+}
+
+.copyrght{
+  color: #ecf4f3;
+  font-size: 0.75rem;
 }
